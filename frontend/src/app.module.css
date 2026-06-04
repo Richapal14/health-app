@@ -1,0 +1,48 @@
+.shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 24px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.header h1 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.header p {
+  font-size: 13px;
+  color: var(--text-3);
+  margin-top: 2px;
+}
+
+.formCard {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+}
+
+.formCard h2 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: var(--text-2);
+}
+
+.state {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-3);
+  font-size: 13px;
+}

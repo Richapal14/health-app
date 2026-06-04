@@ -1,0 +1,138 @@
+.wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  table-layout: fixed;
+}
+
+.table thead tr {
+  background: var(--bg-3);
+}
+
+.table th {
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+/* First row of a new person group gets a slightly stronger top border */
+.groupFirst td {
+  border-top: 2px solid var(--border-2);
+}
+
+/* First entry overall has no top border override needed */
+.table tbody tr:first-child td {
+  border-top: none;
+}
+
+.groupRow td {
+  background: var(--bg-2);
+}
+
+.table tbody tr:last-child td { border-bottom: none; }
+
+.num { text-align: right; }
+
+.mono {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-2);
+}
+
+.nameCell {
+  vertical-align: top;
+}
+
+.name {
+  display: block;
+  font-weight: 500;
+}
+
+.email {
+  display: block;
+  font-size: 11px;
+  color: var(--text-3);
+  margin-top: 1px;
+}
+
+.countBadge {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 10px;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-3);
+  border: 1px solid var(--border-2);
+  color: var(--text-3);
+  letter-spacing: 0.04em;
+}
+
+.badge {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.04em;
+}
+
+.ok   { background: var(--ok-bg);      color: var(--ok);     }
+.high { background: var(--danger-bg);  color: var(--danger); }
+.low  { background: var(--warn-bg);    color: var(--warn);   }
+
+.remarks {
+  font-size: 12px;
+  color: var(--text-2);
+  line-height: 1.6;
+}
+
+.remarkText {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: var(--text-2);
+  line-height: 1.6;
+}
+
+.genBtn {
+  font-size: 11px;
+  padding: 3px 10px;
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.genBtn:hover { background: var(--accent-dim); }
+
+.actions {
+  display: flex;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.del { color: var(--danger); border-color: #fecaca; }
+.del:hover { background: var(--danger-bg); }
+
+.empty {
+  padding: 40px;
+  text-align: center;
+  color: var(--text-3);
+  font-size: 13px;
+}
